@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- make sure to look at fontawesome for some nice fonty icons -->
+	<title>My Image Gallery</title>
+	<script src="sutff.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="ImageGalleryDemo.css">
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<!-- hamburger drop down when in mobile -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+			  <span class="sr-only">Toggle navigation</span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			</button>
+			<a href="#" class="navbar-brand"> <span class="glyphicon glyphicon-picture" aria-hidden="true"></span> KIREI</a>
+		</div>
+		<!-- make in right side of the navbar -->
+		<!-- pat attention to the collapse id and what is suppose to go inside the hamburger -->
+		<div class="collapse navbar-collapse" id="bs-nav-demo">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">Register</a></li>
+				<li><a href="#">Login</a></li>
+			</ul>
+			<ul class="nav navbar-nav">
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- change row to flex class to get rid of white space -->
+	<!-- croping image -->
+	<!-- weird white spacing thing going, will be covered later on -->
+	<div class="container">
+		<div class="jumbotron">
+			<h1> <span class="glyphicon glyphicon-camera" aria-hidden="true"></span> My Image Gallery</h1>
+			<p>Just Some Aesthetically Pleasing Pictures</p>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="thumbnail">
+					<div class="image image1"></div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="thumbnail">
+					<div class="image image2"></div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="thumbnail">
+					<div class="image image3"></div>
+				</div>
+			</div>	
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="thumbnail">
+					<div class="image image4"></div>
+				</div>
+			</div>	
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="thumbnail">
+					<div class="image image5"></div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="thumbnail">
+					<div class="image image6"></div>
+				</div>
+			</div>			
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="thumbnail">
+					<div class="image image7"></div>
+				</div>
+			</div>	
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="thumbnail">
+					<div class="image image8"></div>
+				</div>
+			</div>	
+			<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="thumbnail">
+					<div class="image image9"></div>
+				</div>
+			</div>			
+		</div>
+	</div>
+
+<!-- tutorial container -->
+<!-- <div class="container">
+		<div class="jumbotron">
+			<h1> <span class="glyphicon glyphicon-camera" aria-hidden="true"></span> My Image Gallery</h1>
+			<p>Just Some Aesthetically Pleasing Pictures</p>
+		</div>
+		<div class="flex">
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://i.pximg.net/img-original/img/2019/07/05/19/51/54/75564197_p0.png">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://i.pximg.net/img-original/img/2018/11/18/23/00/17/71719140_p0.png">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://i.pximg.net/img-original/img/2018/12/14/23/00/08/72112996_p0.png">
+				</div>
+			</div>	
+		</div>
+		<div class="flex">
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://i.pximg.net/img-original/img/2018/11/17/20/05/41/71696372_p0.png">
+				</div>
+			</div>	
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://i.pximg.net/img-original/img/2018/07/06/11/10/35/69558760_p0.png">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://i.pximg.net/img-original/img/2019/02/24/03/50/48/73358957_p0.jpg">
+				</div>
+			</div>			
+		</div>
+		<div class="flex">
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://i.pximg.net/img-original/img/2019/09/12/04/05/56/76740303_p0.jpg">
+				</div>
+			</div>	
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://i.pximg.net/img-original/img/2019/04/12/01/39/54/74158931_p0.jpg">
+				</div>
+			</div>	
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://i.pximg.net/img-original/img/2019/02/25/22/57/03/73391349_p0.jpg">
+				</div>
+			</div>			
+		</div>
+	</div>
+ -->
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</body>
+</html>
